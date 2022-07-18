@@ -8,7 +8,7 @@ header {
   text-align: center;
 }
 body{
-  margin: 0 30px;
+  margin: 30px;
 }
 header h1,
 h2 {
@@ -30,13 +30,18 @@ h3 {
 
 #contact {
   list-style-type: none;
+  color: black;
 }
+
 
 #contact i {
   width: 30px;
-  color: antiquewhite;
+  color: rgb(215, 223, 250);
 }
-
+#links{
+  list-style-type: none;
+  color: rgb(215, 223, 250);
+}
 .container {
   display: grid;
   grid-template-columns: 30% auto;
@@ -57,4 +62,8 @@ h3 {
   border: 1px solid rgba(128, 128, 128, 0.581);
   border-radius: 5px;
   padding: 20px;
+}
+a{
+  text-decoration: none;
+  color: black;
 }

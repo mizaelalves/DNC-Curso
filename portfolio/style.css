@@ -12,7 +12,32 @@ p{
   grid-auto-columns: 1fr;
 }
 
-#header{
+#headerCta{
+  display: grid;
+  grid-auto-flow: column;
+}
+#headerName{
+  display: grid;
+  grid-column: 1;
+  height: auto;
+  align-items: end;
+}
+#headerName h1{
+text-align: start
+}
+#headerText{
+  grid-column: 1/2;
+  width: 400px;
+}
+#headerImg{
+  display: grid;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  width: auto;
+  align-items: end;
+}
+
+#title{
   font-style: normal;
   font-weight: 600;
   font-size: 12px;
@@ -23,6 +48,11 @@ p{
 
   margin: 40px 0;
 
+}
+#header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 #menu{
   list-style-type: none;
@@ -43,10 +73,13 @@ a{
   text-decoration: none;
 }
 
+
+
+
 #buttonCta{
   background-color: #1F7CFF;
   text-decoration: none;
-  border-radius: 50px;
+  border-radius: 5px;
   text-align: center;
   color: #ffff;
   padding: 10px 25px 10px 25px;
@@ -71,6 +104,7 @@ a{
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 20px
 }
 
 #clientLogo{
@@ -83,8 +117,8 @@ a{
   width: 42px;
 }
 
-h2.red{
-  color: red;
+h2.orange{
+  color: #ffbe55;
 
 }
 h1.black{
@@ -113,7 +147,7 @@ i{
 
 #contactForm input{
   background-color: #f5f5f5;
-  border-radius: 50px;
+  border-radius: 5px;
   color: #575455;
   border: 0;
   width: 70%;
@@ -125,9 +159,10 @@ i{
   text-align: center;
   background-color: #1F7CFF;
   padding: 15px 30px;
-  border-radius: 50px;
+  border-radius: 5px;
   margin-top: 10px;
   color: white;
+  cursor: pointer;
 }
 
 .portfolioImg img{
@@ -139,4 +174,40 @@ i{
 
 .portfolioImg h2{
   margin: 0;
+}
+
+@media only screen and (max-width: 900px) {
+  body {
+    margin: 0 10px;
+  }
+  #headerCta{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  #headerName{
+    grid-column: 1/4;
+  }
+  #headerImg{
+    grid-column: 1;
+    align-items: end;
+    margin-right: 10px;
+  }
+  #headerName h1{
+    font-size: auto;
+  }
+  #headerText{
+    grid-column: 1/4;
+  }
+
+  #myServices{
+    font-size: 12px;
+    gap: 5px;
+  }
+  #contact{
+    font-size: 12px;
+  }
+  #contactForm{
+    margin: 0;
+    text-align: start;
+  }
 }
