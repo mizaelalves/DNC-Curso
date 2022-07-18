@@ -1,0 +1,142 @@
+body{
+  margin: 0 15%;
+  font-family: Poppins;
+
+}
+p{
+  color: gray;
+}
+.container{
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
+}
+
+#header{
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 42px;
+
+  text-decoration-line: underline;
+
+
+  margin: 40px 0;
+
+}
+#menu{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  margin-top:49px;
+  text-align: right;
+}
+
+
+#menu li{
+  display: inline-block;
+  margin-left: 20px;
+}
+
+a{
+  color: black;
+  text-decoration: none;
+}
+
+#buttonCta{
+  background-color: #1F7CFF;
+  text-decoration: none;
+  border-radius: 50px;
+  text-align: center;
+  color: #ffff;
+  padding: 10px 25px 10px 25px;
+}
+
+#headerCta h1{
+  font-size: 42px;
+}
+
+#headerImg img{
+  border-radius: 30px;
+  width: 100%;
+}
+
+.headerLogo{
+  text-align: center;
+}
+
+#clients{
+  margin-top:28px;
+  margin-bottom: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#clientLogo{
+  width: 8rem;
+}
+#clientLogo img{
+  width: 100%;
+}
+#clientLogoSlack img{
+  width: 42px;
+}
+
+h2.red{
+  color: red;
+
+}
+h1.black{
+  color: black;
+  margin-top: 0;
+}
+.textCenter{
+  text-align: center;
+}
+i{
+  font-size: 30px;
+}
+#services{
+  text-align: center;
+}
+
+#contactImg img{
+  border-radius: 30px;
+  width: 100%;
+}
+
+#contactForm {
+  margin-left: 75px;
+  text-align: left;
+}
+
+#contactForm input{
+  background-color: #f5f5f5;
+  border-radius: 50px;
+  color: #575455;
+  border: 0;
+  width: 70%;
+  padding: 15px 25px;
+}
+
+#contactForm button{
+  border: 0;
+  text-align: center;
+  background-color: #1F7CFF;
+  padding: 15px 30px;
+  border-radius: 50px;
+  margin-top: 10px;
+  color: white;
+}
+
+.portfolioImg img{
+  width: 100%;
+}
+.portfolioImg{
+  padding: 10px;
+}
+
+.portfolioImg h2{
+  margin: 0;
+}
