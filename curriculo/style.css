@@ -59,7 +59,7 @@ h3 {
 }
 .card {
   font-family: "Montserrat", sans-serif;
-  border: 1px solid rgba(128, 128, 128, 0.581);
+  border: 1.5px solid rgba(128, 128, 128, 0.581);
   border-radius: 5px;
   padding: 20px;
 }
